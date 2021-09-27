@@ -1,0 +1,219 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+\usepackage{standalone}
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.85]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%\usepackage[utf8]{inputenc}
+
+%\usepackage{booktabs}
+\usepackage{fontawesome}
+\usepackage{marvosym} % For cool symbols.
+%\usepackage{hyperref}
+
+
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Kiran} % Your first name
+\familyname{Makhijani} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+%\address{Bay Area}{CA}
+\mobile{(+1) 408-410-2484}
+
+
+%\fax{(000) 111 1113}
+ 
+%\social{github}{stefano-bragaglia}
+\email{kiran@mirani.net} 
+
+
+%\homepage{www.github.io/}kiranmak}
+
+% social link \faGithub, \faSkype, \faLinkedin,\faStackExchange, and \faStackOverflow
+\extrainfo{
+    \faGithub\href{https://github.com/kiranmak}{ Github} \quad
+    \faLinkedin\href{https://www.linkedin.com/kiranmak/}{ Linkedin} \quad
+    %\faSkype\href{https://skype.com/abc}{Skype}
+    }
+
+
+
+%\social[linkedin][www.linkedin.com]{name}
+% The first argument is %the url for the clickable link, the second argument is the url displayed in the %template - this allows special characters to be displayed such as the tilde in this %example
+
+%\photo[40pt][0.2pt]{picture} % The first bracket is the picture height, the second is %the thickness of the frame around the picture (0pt for no frame)
+%\quote{Not Attention, Patience is all we need.}
+
+%----------------------------------------------------------------------------------------
+
+\newcommand{\cvdoublecolumn}[2]{%
+  \cvitem[.75em]{}{%
+    \begin{minipage}[t]{\listdoubleitemcolumnwidth}#1\end{minipage}%
+    \hfill%
+    \begin{minipage}[t]{\listdoubleitemcolumnwidth}#2\end{minipage}%
+    }%
+}
+
+\usepackage{multibbl}
+\newcommand\Colorhref[3][orange]{\href{#2}{\small\color{#1}#3}}
+
+
+% \newcommand{\cvreference}[7]{%
+%     \textbf{#1}\newline% Name
+%     \ifthenelse{\equal{#2}{}}{}{\addresssymbol~#2\newline}%
+%     \ifthenelse{\equal{#3}{}}{}{#3\newline}%
+%     \ifthenelse{\equal{#4}{}}{}{#4\newline}%
+%     \ifthenelse{\equal{#5}{}}{}{#5\newline}%
+%     \ifthenelse{\equal{#6}{}}{}{\emailsymbol~\texttt{#6}\newline}%
+%     \ifthenelse{\equal{#7}{}}{}{\phonesymbol~#7}}
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+\section{Introduction}
+\cvitem{Goal: } {Seeking an architect or a principal leadership role in the area of network architecture, protocol and platform research, development, standardization.}
+\cvitem{Proven Record: } {I have been in the data- and tele-communication industry  throughout my career and have a track record of accomplishing beyond the project goals. Known for successful collaborations with internal and external partners, very active in standards (IETF, ITU, ETSI) and research community (IEEE, ACM). \newline As a technologist, I have a number of patents, my work is published in both academic and industry standard organizations.} 
+\cvitem{Strategy \& Planning: }{Reporting into the OCTO, I have been part of several pre-production initiatives; collaborated with executives and managers to develop long-range BU vision, strategic initiatives, defining  targets, requirements, and actionable recommendations.}
+
+ \cvitem{Leadership and Mentoring: } { Outside work, I am a mentor to graduate students. I  volunteer at a level-up program, with a university  preparing students for professional life.}
+
+
+% {}
+% \cvitem{Percentage :}{90.8 \%}
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+  
+\section{Professional Experience}
+\subsection{Futurewei Technologies, Santa Clara, CA}
+\cventry{Nov, 2013 -- present}{\textit{Principal Engineer}}{}{}{}
+{Working with the office of the CTO, involved in the industry research on next-generation network technologies and protocols in service provider and large-scale network markets. Day to day work involves equal parts research, standardization and collaboration. It entails presenting, meeting partners and customers explaining new research directions, design and solution with technical details.\\
+}
+\cventry{Cloudcasting}{\textit{Virtual routing architecture for cloud centric applications}}{}{}{}
+{Developed a virtual routing architecture and protocol for auto-provisioning of tenant networks. 
+}
+\cventry{Network 2030}{\textit{Innovations in IP Networks}}{}{}{}
+{\textbf{Focus on in-network services} and capabilities for emerging applications in industry automation, and advanced media ('holographic type' and high-precision communications). Analyse challenges in current networks and research new data plane and packet format mechanisms. Designing proof-of-concepts for research in transport and network layer. 
+}
+\cventry{Network Slicing}{\textit{Operator-centric Architecture for Network Slices}}{}{}{}
+{An end to end 5G/B5G Network Slicing architecture and  protocol for resource sharing in a multi-domain, multi-tenant network. Led IETF standard in scope of Network slice framework and terminologies.
+} 
+\cventry{5G Transport}{\textit{3GPP Mobile Backhaul Transport Networks}}{}{}{}
+{An in-depth study and evaluation of end-to-end LTE, 5G/B5G Network Slicing architecture with specific focus on mobility and protocol overheads in mobile networks.
+} 
+
+\cventry{Standards activities: } {\textit{Founding member of FG-NET-2030.}}{}{}{}
+ {\emph{Network 2030 initiative} at ITU, to develop formal road map and requirements for the next-gen network technologies. Familiar with IETF mechanisms and leading standardization of network slices in IETF.
+ }
+
+\cventry{Leadership: } {\textit{Program and Project Management.}}{}{}{}
+{Both in the US and Europe on future network architecture topics, guiding students on New IP research.
+}
+
+\subsection{Cisco Systems, San Jose, CA}
+\cventry{July,2005 -- Oct,2013}{\textit{Technical Leader}}{}{}{}{Led design \& development of Edge routing and switching component on IOS-XR, IOS. Including first in-house support of an Openflow agent, policy based routing, Lawful intercept, etc. Solved high-availability  and scalability challenges on a distributed  system such as IOS-XR. \newline At Cisco, I have mentored new hires, resolved customer issues and worked with  platform-hardware and core operating system teams.}
+
+\cvitem{Policy services layer :}{Developed architecture to support flow-based infrastructure as well as network programmability (ONEP) for a distributed system.  \textbf{Platform Stability}: Provided HA solution for lawful intercept as a part of L2L3 services team. Developed hybrid architecture endian aware message translation methods.
+}
+ \cvitem{Edge Router Services:} {Developed platform-dependent slow-path forwarding module, added performance tweaks for QoS, selectively drop packets, prioritizing control packets, and bug fixes. 
+ }
+
+ \cvitem{L2 functions:} {Designed support for CFM 802.1ag standard over EoMPLS and different Metro Ethernet services. The services included CFM over VFI interfaces.
+ }
+\cventry{Pre-2005}{\textit{Software Engineer}}{}{}{}{Contributed to  network device drivers and RTOS projects at HCL Tech, Futuresoft, Alcatel, Tasman Networks.}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{1994--1997 :}{Master of Computer Applications}{Computer Science Department }{Pune University)}{}{}
+\cventry{1991--1994 :}{Bachelor of Science}{Delhi University}{Delhi, India}{}{}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Technical skills}
+
+\cvitem{Programming Languages}{\textbf{\emph{Experienced:}} C, C++, \textbf{\emph{Familiar:}} Python, Bash, Java}
+\cvitem{Network Technologies}{Network Architecture, Protocols, 5G Arch, 5G-Backhaul, Edge computing, Network Slices, Service Provider and Data Center Networks }
+\cvitem{Network Protocols}{\textbf{\emph{Developed:}} STP,  CFM, BFD, QoS, PBR, lawful-intercept, {\textbf{\emph{Fluency:}} BGP, IS-IS, Segment Routing, and MPLS.}}
+\cvitem{Standards and Research }{Authored specifications for IETF, ITU-T, and ETSI. TPC, \textit{author, chair, reviewer} in ACM, IEEE involvement }
+\cvitem{Network Infrastructure } {IOS, IOS-XR, ASR9k, 7600 series}
+
+\section{External Positions of Responsibility}
+
+\cvitem{2020-21}{\textbf{General Chair} of the \textbf{$1^{st}$} Workshop on IEEE New Internetworking Protocols, Architecture and Algorithms (NIPAA), IEEE ICNP.}
+
+\cvitem{2018}{\textbf{Session Chair} of the \textbf{$1^{st}$} New Internet Forum,  ETSI Track, at SDN NFV Congress}
+\cvitem{2018, 19}{\textbf{General Chair} of the \textbf{$1^{st}$} Workshop on Networking for Emerging Applications and Technologies (NEAT) at ACM SIGCOMM.}
+\cvitem{2017}{\textbf{Rapporteur} for E2E Network Slicing Architecture, Next-generation Protocols group at \textbf{ETSI-NGP}} 
+\cvitem{2019, 21}{\textbf{Technical Advisor} to annual CXO Advisory Board at \textbf{ITU-TSB}}
+\section{Publications}
+
+\subsection{Published Papers (Accepted)}
+\newbibliography{journal}
+\bibliographystyle{journal}{plainyrrev}
+\nocite{journal}{*}
+\bibliography{journal}{journal}
+{\large \textsc{Refereed Journal Articles}}
+
+\subsection{Standards and Industry Relevant Publications}
+\newbibliography{conference}
+\nocite{conference}{*}
+\bibliographystyle{conference}{plainyrrev}
+\bibliography{conference}{conference}
+{\large \textsc{Standards and Industry Relevant Publications}}
+
+\subsection{Publications and Speeches as Subject Matter Expert}
+\newbibliography{speeches}
+\nocite{speeches}{*}
+\bibliographystyle{speeches}{plainyrrev}
+\bibliography{speeches}{speeches}
+{\large \textsc{Publications and Speeches as Subject Matter Expert}}
+
+\section{References}
+
+Available on Request
+
+\end{document}
