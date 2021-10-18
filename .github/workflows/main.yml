@@ -12,12 +12,21 @@ jobs:
           root_file: main.tex
           compiler: pdflatex
           args: -interaction=nonstopmode -shell-escape
-      - name: bibtex main
+      - name: bibtex conference
         uses: dante-ev/latex-action@latest
         with:
-          root_file: main.aux
+          root_file: conference.aux
           compiler: bibtex
-          args: 
+      - name: bibtex journal
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: journal.aux
+          compiler: bibtex
+      - name: bibtex speeches
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: speeches.aux
+          compiler: bibtex
       - name: pdflatex main
         uses: dante-ev/latex-action@latest
         with:
