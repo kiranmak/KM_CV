@@ -40,6 +40,12 @@
 \usepackage{fontawesome}
 \usepackage{marvosym} % For cool symbols.
 %\usepackage{hyperref}
+%\usepackage[backend=biber]{biblatex}
+%\addbibresource[label=jour]{journal.bib}
+%\addbibresource[label=spk]{speeches.bib}
+%\addbibresource[label=conf]{conference.bib}
+
+
 
 
 
@@ -51,8 +57,8 @@
 \familyname{Makhijani} % Your last name
 
 % All information in this block is optional, comment out any lines you don't need
-\title{Curriculum Vitae}
-%\address{Bay Area}{CA}
+%\title{Curriculum Vitae}
+%\address{Bay Area CA 95030}
 \mobile{(+1) 408-410-2484}
 
 
@@ -105,13 +111,13 @@
 \begin{document}
 
 \makecvtitle % Print the CV title
-
+\vspace{-13mm}
 \section{Introduction}
-\cvitem{Goal: } {Seeking an architect or a principal leadership role in the area of network architecture, protocol and platform research, development, standardization.}
-\cvitem{Proven Record: } {I have been in the data- and tele-communication industry  throughout my career and have a track record of accomplishing beyond the project goals. Known for successful collaborations with internal and external partners, very active in standards (IETF, ITU, ETSI) and research community (IEEE, ACM). \newline As a technologist, I have a number of patents, my work is published in both academic and industry standard organizations.} 
+\cvitem{Goal: } {Seeking an architect or a principal leadership role in the area of network infrastructure and technologies, leveraging my experience in research, development \& standardization.}
+\cvitem{Proven Record: } {I have been in the data- and tele-communication industry  throughout my career and have a track record of accomplishing beyond the project goals. Known for successful collaborations with internal and external partners, active in standards (IETF, ITU, ETSI) and research community (IEEE, ACM). \newline As a technologist, I have a number of patents, my work is peer-reviewed \& published in both academic and industry standard organizations.} 
 \cvitem{Strategy \& Planning: }{Reporting into the OCTO, I have been part of several pre-production initiatives; collaborated with executives and managers to develop long-range BU vision, strategic initiatives, defining  targets, requirements, and actionable recommendations.}
 
- \cvitem{Leadership and Mentoring: } { Outside work, I am a mentor to graduate students. I  volunteer at a level-up program, with a university  preparing students for professional life.}
+ \cvitem{Leadership | Mentor: } { Guide graduate students - career advice, projects, soft-skills. I  volunteer at a level-up program, with a university  preparing students for professional life.}
 
 
 % {}
@@ -127,27 +133,26 @@
 \cventry{Nov, 2013 -- present}{\textit{Principal Engineer}}{}{}{}
 {Working with the office of the CTO, involved in the industry research on next-generation network technologies and protocols in service provider and large-scale network markets. Day to day work involves equal parts research, standardization and collaboration. It entails presenting, meeting partners and customers explaining new research directions, design and solution with technical details.\\
 }
-\cventry{Cloudcasting}{\textit{Virtual routing architecture for cloud centric applications}}{}{}{}
+\cventry{Cloudcasting}{\textit{Virtual routing architecture for cloud centric applications}}{}{}
 {Developed a virtual routing architecture and protocol for auto-provisioning of tenant networks. 
-}
-\cventry{Network 2030}{\textit{Innovations in IP Networks}}{}{}{}
+}{}
+\cventry{Network 2030}{\textit{Innovations in IP Networks}}{}{}
 {\textbf{Focus on in-network services} and capabilities for emerging applications in industry automation, and advanced media ('holographic type' and high-precision communications). Analyse challenges in current networks and research new data plane and packet format mechanisms. Designing proof-of-concepts for research in transport and network layer. 
-}
-\cventry{Network Slicing}{\textit{Operator-centric Architecture for Network Slices}}{}{}{}
-{An end to end 5G/B5G Network Slicing architecture and  protocol for resource sharing in a multi-domain, multi-tenant network. Led IETF standard in scope of Network slice framework and terminologies.
-} 
-\cventry{5G Transport}{\textit{3GPP Mobile Backhaul Transport Networks}}{}{}{}
-{An in-depth study and evaluation of end-to-end LTE, 5G/B5G Network Slicing architecture with specific focus on mobility and protocol overheads in mobile networks.
-} 
+}{}
+\cventry{Network Slicing}{\textit{Operator-centric Architecture for Network Slices}}{}
+{5G/B5G Network Slicing creation, on-boarding, and  distributed protocol for resource sharing in a multi-domain, multi-tenant network}{Led IETF standard in scope of Network slice framework and terminologies
+} {}
+\cventry{5G Transport}{\textit{3GPP Mobile Backhaul Transport Networks}}{}{}
+{An in-depth study and evaluation of end-to-end LTE, 5G/B5G Network Slicing architecture with specific focus on mobility and protocol overheads in mobile networks
+} {}
 
-\cventry{Standards activities: } {\textit{Founding member of FG-NET-2030.}}{}{}{}
- {\emph{Network 2030 initiative} at ITU, to develop formal road map and requirements for the next-gen network technologies. Familiar with IETF mechanisms and leading standardization of network slices in IETF.
- }
+\cventry{Standards activities: } {\textit{Founding member of FG-NET-2030}}{}
+ {\emph{Network 2030 initiative} at ITU, to develop formal road map and requirements for the next-gen network technologies}{Familiar with IETF mechanisms and leading standardization of network slices in IETF
+ }{}
 
-\cventry{Leadership: } {\textit{Program and Project Management.}}{}{}{}
-{Both in the US and Europe on future network architecture topics, guiding students on New IP research.
-}
-
+\cventry{Leadership: } {\textit{Program and Project Management}}{}{}
+{Long and short term strategy and planning for our projects with emphasis on adapting to  changing market conditions
+}{}
 \subsection{Cisco Systems, San Jose, CA}
 \cventry{July,2005 -- Oct,2013}{\textit{Technical Leader}}{}{}{}{Led design \& development of Edge routing and switching component on IOS-XR, IOS. Including first in-house support of an Openflow agent, policy based routing, Lawful intercept, etc. Solved high-availability  and scalability challenges on a distributed  system such as IOS-XR. \newline At Cisco, I have mentored new hires, resolved customer issues and worked with  platform-hardware and core operating system teams.}
 
@@ -158,7 +163,7 @@
 
  \cvitem{L2 functions:} {Designed support for CFM 802.1ag standard over EoMPLS and different Metro Ethernet services. The services included CFM over VFI interfaces.
  }
-\cventry{Pre-2005}{\textit{Software Engineer}}{}{}{}{Contributed to  network device drivers and RTOS projects at HCL Tech, Futuresoft, Alcatel, Tasman Networks.}
+\cventry{Pre-2005}{\textit{Software Engineer}}{}{}{Contributed to  network device drivers and RTOS projects at HCL Tech, Futuresoft, Alcatel, Tasman Networks}{}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -175,11 +180,11 @@
 
 \section{Technical skills}
 
-\cvitem{Programming Languages}{\textbf{\emph{Experienced:}} C, C++, \textbf{\emph{Familiar:}} Python, Bash, Java}
+\cvitem{Programming}{\textbf{\emph{Experienced:}} C, C++, \textbf{\emph{Familiar:}} Python, Bash, Java}
 \cvitem{Network Technologies}{Network Architecture, Protocols, 5G Arch, 5G-Backhaul, Edge computing, Network Slices, Service Provider and Data Center Networks }
 \cvitem{Network Protocols}{\textbf{\emph{Developed:}} STP,  CFM, BFD, QoS, PBR, lawful-intercept, {\textbf{\emph{Fluency:}} BGP, IS-IS, Segment Routing, and MPLS.}}
 \cvitem{Standards and Research }{Authored specifications for IETF, ITU-T, and ETSI. TPC, \textit{author, chair, reviewer} in ACM, IEEE involvement }
-\cvitem{Network Infrastructure } {IOS, IOS-XR, ASR9k, 7600 series}
+\cvitem{Platforms} {IOS, IOS-XR, ASR9k, 7600 series, XDP, Linux networking - namespaces}
 
 \section{External Positions of Responsibility}
 
@@ -188,13 +193,16 @@
 \cvitem{2018}{\textbf{Session Chair} of the \textbf{$1^{st}$} New Internet Forum,  ETSI Track, at SDN NFV Congress}
 \cvitem{2018, 19}{\textbf{General Chair} of the \textbf{$1^{st}$} Workshop on Networking for Emerging Applications and Technologies (NEAT) at ACM SIGCOMM.}
 \cvitem{2017}{\textbf{Rapporteur} for E2E Network Slicing Architecture, Next-generation Protocols group at \textbf{ETSI-NGP}} 
-\cvitem{2019, 21}{\textbf{Technical Advisor} to annual CXO Advisory Board at \textbf{ITU-TSB}}
+\cvitem{2019, 21}{\textbf{invited delegate} to annual CXO Advisory Board at \textbf{ITU-TSB}}
+
+\vspace{5mm}
+\cvitem{-x-}{List of published work enclosed below -x-}
 \section{Publications}
 
 \subsection{Published Papers (Accepted)}
 \newbibliography{journal}
-\bibliographystyle{journal}{plainyrrev}
 \nocite{journal}{*}
+\bibliographystyle{journal}{plainyrrev}
 \bibliography{journal}{journal}
 {\large \textsc{Refereed Journal Articles}}
 
@@ -211,9 +219,9 @@
 \bibliographystyle{speeches}{plainyrrev}
 \bibliography{speeches}{speeches}
 {\large \textsc{Publications and Speeches as Subject Matter Expert}}
-
+ 
 \section{References}
 
 Available on Request
-
+ 
 \end{document}
