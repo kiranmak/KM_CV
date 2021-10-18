@@ -17,16 +17,19 @@ jobs:
         with:
           root_file: conference.aux
           compiler: bibtex
+          args: 
       - name: bibtex journal
         uses: dante-ev/latex-action@latest
         with:
           root_file: journal.aux
           compiler: bibtex
+          args:
       - name: bibtex speeches
         uses: dante-ev/latex-action@latest
         with:
           root_file: speeches.aux
           compiler: bibtex
+          args:
       - name: pdflatex main
         uses: dante-ev/latex-action@latest
         with:
