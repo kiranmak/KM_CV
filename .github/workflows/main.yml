@@ -41,9 +41,14 @@ jobs:
           # setup the username and email. I tend to use 'GitHub Actions Bot' with no email by default
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
-      - name: commit
+      - name: Commit files
         run: |
-          # Stage the file, commit and push
-          git add main.pdf
-          git commit -m "new main.pdf commit"
-          git push origin master
+          # setup the username and email. I tend to use 'GitHub Actions Bot' with no email by default
+          git config --local user.name "GitHub Actions Bot"
+          git config --local user.email "<>"
+          git commit -m "Add main.pdf changes" main.pdf
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
