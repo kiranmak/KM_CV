@@ -1,0 +1,54 @@
+name: Build LaTeX document
+on: [push]
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+      - name: pdflatex main
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: main.tex
+          compiler: pdflatex
+          args: -interaction=nonstopmode -shell-escape
+      - name: bibtex conference
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: conference.aux
+          compiler: bibtex
+          args: 
+      - name: bibtex journal
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: journal.aux
+          compiler: bibtex
+          args:
+      - name: bibtex speeches
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: speeches.aux
+          compiler: bibtex
+          args:
+      - name: pdflatex main
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: main.tex
+          compiler: pdflatex
+          args: -interaction=nonstopmode -shell-escape
+      - name: setup git config
+        run: |
+          # setup the username and email. I tend to use 'GitHub Actions Bot' with no email by default
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+      - name: Commit files
+        run: |
+          # setup the username and email. I tend to use 'GitHub Actions Bot' with no email by default
+          git config --local user.name "GitHub Actions Bot"
+          git config --local user.email "<>"
+          git commit -m "Add main.pdf changes" main.pdf
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
