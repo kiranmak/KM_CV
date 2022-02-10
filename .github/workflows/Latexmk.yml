@@ -15,6 +15,7 @@ jobs:
         with:
           format: pdf
           filename: main.tex
+          working-directory: research_cv
           
       - name: setup git config
         run: |
@@ -30,5 +31,6 @@ jobs:
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
+          working-directory: research_cv
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
