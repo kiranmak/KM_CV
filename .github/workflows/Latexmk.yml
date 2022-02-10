@@ -4,7 +4,10 @@ name: Latexmk
 on: [push]
 
 jobs:
-  build-test:
+  build:
+    defaults:
+       run:
+        working-directory: research_cv
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
@@ -15,7 +18,6 @@ jobs:
         with:
           format: pdf
           filename: main.tex
-          working-directory: research_cv
           
       - name: setup git config
         run: |
@@ -31,6 +33,5 @@ jobs:
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
-          working-directory: research_cv
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
