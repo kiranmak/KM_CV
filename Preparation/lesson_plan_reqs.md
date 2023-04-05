@@ -13,4 +13,22 @@ Places:
 - Knowledge of merchant silicon, including Broadcom DNX and XGS hardware platforms and SDK (SAI)
 -Operational experience deploying network equipment or products/services at scale
 
+|| Responsibilities | Preferred Skills/Qualification:||
+
+| Create a well-informed cloud strategy and manage the adaption process.
+Regularly evaluate cloud applications, hardware, and software.
+Develop and organize cloud systems.
+Work closely with IT security to monitor the company's cloud privacy.
+Respond to technical issues in a professional and timely manner.
+Offer guidance in infrastructure movement techniques including bulk application transfers into the cloud.
+Identify the top cloud architecture solutions to successfully meet the strategic needs of the company.
+Required Skills/Qualifications:
+
+Able to quickly adapt to multiple networking environments and troubleshoot it
+Able to configure equipment, and troubleshoot complex environments is a must including
+routing and switching, L2 Protocols, L3 Protocols (Spanning Tree, BGP, OSPF and EIGRP, etc.)
+
+| CCNA, CCNP, Juniper, Palo Alto
+Home office setup (network, phone, etc.) Our strength is built on our ability to work together. Our diverse backgrounds offer different perspectives and new ways of thinking. It encourages lively discussions, inspires thought leadership, and helps us build better solutions for our clients. We want someone who thrives in this setting and is inspired to craft meaningful solutions through true collaboration.
+|
 
