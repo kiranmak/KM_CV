@@ -15,7 +15,7 @@ Places:
 
 
 | Responsibilities        | Preferred Skills Qualification  |
-| ------------- |:-------------:|
+| ------------- |-------------|
 | Create a well-informed cloud strategy and manage the adaption process.
 <br>Regularly evaluate cloud applications, hardware, and software.
 <br>Develop and organize cloud systems.
@@ -24,5 +24,5 @@ Places:
 <br>Offer guidance in infrastructure movement techniques including bulk application transfers into the cloud.
 <br>Identify the top cloud architecture solutions to successfully meet the strategic needs of the company.
 <br>Able to configure equipment, and troubleshoot complex environments is a must including
-<br>routing and switching, L2 Protocols, L3 Protocols (Spanning Tree, BGP, OSPF and EIGRP, etc.)|
+<br>routing and switching, L2 Protocols, L3 Protocols (Spanning Tree, BGP, OSPF and EIGRP, etc.)
 | CCNA, CCNP, Juniper, Palo Alto<br> Home office setup (network, phone, etc.) Our strength is built on our ability to work together.|
