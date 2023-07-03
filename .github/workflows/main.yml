@@ -1,20 +1,18 @@
-name: Build LaTeX document
-on: [push]
+name: dxjoke Tectonic Docker
+
+on: push
 
 jobs:
-  build_latex:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Set up Git repository
-        uses: actions/checkout@v3
-      - name: Compile LaTeX document
-        uses: xu-cheng/latex-action@v2
+      - name: Checkout repository
+        uses: actions/checkout@v1
+      - name: Compile
+        run: docker run --mount src=$GITHUB_WORKSPACE/src,target=/usr/src/tex,type=bind dxjoke/tectonic-docker:latest /bin/sh -c "tectonic main.tex"
+        working-directory: ./reasearch_cv
+      - name: Upload pdf
+        uses: actions/upload-artifact@v2
         with:
-          root_file: main.tex
-          working_directory:  ./research_cv
-        
-      - name: Upload PDF file
-        uses: actions/upload-artifact@v3
-        with:
-          name: PDF
-          path: main.pdf
+          name: main.zip
+          path: src/main.pdf
