@@ -1,9 +1,5 @@
 name: Build LaTeX document
 on: [push]
-defaults:
-  run:
-    shell: bash
-    working-directory:  ./research_cv
 
 jobs:
   build_latex:
@@ -15,6 +11,8 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: main.tex
+          working_directory:  ./research_cv
+        
       - name: Upload PDF file
         uses: actions/upload-artifact@v3
         with:
