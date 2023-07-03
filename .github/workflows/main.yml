@@ -9,10 +9,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v1
       - name: Compile
-        run: docker run --mount src=$GITHUB_WORKSPACE/src,target=/usr/src/tex,type=bind dxjoke/tectonic-docker:latest /bin/sh -c "tectonic main.tex"
-        working-directory: ./research_cv
+        run: docker run --mount src=$GITHUB_WORKSPACE/research_cv,target=/usr/src/tex,type=bind dxjoke/tectonic-docker:latest /bin/sh -c "tectonic main.tex"
       - name: Upload pdf
         uses: actions/upload-artifact@v2
         with:
           name: main.zip
-          path: src/main.pdf
+          path: research_cv/main.pdf
