@@ -7,7 +7,7 @@ jobs:
   build:
     defaults:
        run:
-        working-directory: research_cv
+        working-directory: ./research_cv
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
