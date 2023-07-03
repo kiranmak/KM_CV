@@ -10,7 +10,7 @@ jobs:
         uses: actions/checkout@v1
       - name: Compile
         run: docker run --mount src=$GITHUB_WORKSPACE/src,target=/usr/src/tex,type=bind dxjoke/tectonic-docker:latest /bin/sh -c "tectonic main.tex"
-        working-directory: ./reasearch_cv
+        working-directory: reasearch_cv
       - name: Upload pdf
         uses: actions/upload-artifact@v2
         with:
