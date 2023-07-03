@@ -2,11 +2,11 @@
 % this is inspired by Michael Pollind's Awesome CV 
 % Created from scratch as a much simpler alternative to it to actually learn LaTeX.
 % Might be interpreted as an easier-to-edit or easier-to-understand-what-is-going-on version of it.
-\author{Murat Can Karacabey}
+%\author{Murat Can Karacabey}
 \RequirePackage[dvipsnames]{xcolor} % moved here I guess article class causes option clash with xcolor if used after loading the class
 \LoadClass[11pt]{article}
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{muratcan_cv}[2020/04/15 Muratcan CV Class]
+%\ProvidesClass{muratcan_cv}[2020/04/15 Muratcan CV Class]
 \RequirePackage[sfdefault]{noto}
 \RequirePackage{etoolbox}
 \RequirePackage{pgffor}
@@ -110,7 +110,22 @@ Position: & \@claimedposition \\
 \end{tabular}
 }
 
-
+\newcommand{\work}[4]{
+	% name of the work
+	\noindent  \textbf{#1}
+	% at the right the duration
+	\hfill 
+	\framebox{% duration inside a frame box
+		\parbox{6em}{%
+			\centering\textbf{#2}}} \par
+	% new paragraph with the school in italics
+	\noindent \textit{#3} \par
+	% description with no hanging and in smaller text
+	\vspace*{0.5em}
+	\noindent\hangindent=2em\hangafter=0 \small #4 
+	%back to normal size
+	\normalsize \par}
+	
 % Helper commands
 
 \newcommand\ruleafter[1]{#1~{\color{black!60!\@themecolor}\hrulefill}} % a trick to put the line with <before> parameter in \titleformat
@@ -151,7 +166,7 @@ Position: & \@claimedposition \\
 }
 
 \newcommand{\explanationdetail}[1]{%
-    \indent \begin{minipage}{0.96\linewidth} \footnotesize #1 \end{minipage} \\[0.1cm]
+    \indent \begin{minipage}{0.96\linewidth}  #1 \end{minipage} \\[0.1cm]
 }
 
 \newcommand{\itemwithtext}[1]{%
@@ -179,10 +194,8 @@ Position: & \@claimedposition \\
 
 \newcommand\createskills[1]{%
 \explanationdetail{
- % \begin{tabular}{rl}
  {\RaggedRight
     \begin{tabular*}{\centering}{c m{12.5 cm}}
-    %\begin{tabular}{r p{11cm}}   
     \makeatletter
     \@for\thisitem:=#1\do{\thisitem\\[0.1cm]}
     \makeatother
@@ -259,12 +272,13 @@ Position: & \@claimedposition \\
 % Fonts %
 %----------------------------------------------------------------------------------------
 
-\RequirePackage[quiet]{fontspec}
-%\RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
-\newfontfamily\bodyfont{Roboto-Regular}[Path=fonts/]
-\newfontfamily\bodyfontit{Roboto-LightItalic}[Path=fonts/]
-\newfontfamily\thinfont{Roboto-Thin}[Path=fonts/]
-\newfontfamily\headingfont{RobotoCondensed-Bold}[Path=fonts/]
+
+\newfontfamily{\rim}[Path=./fonts/, Scale=1.5]{Roboto-Regular}
+
+%\newfontfamily{\rim}[Path=./fonts/, Scale=1.5]{Rat Infested Mailbox}
+%\newfontfamily\bodyfontit{Roboto-LightItalic}[Path=fonts/]
+%\newfontfamily\thinfont{Roboto-Thin}[Path=fonts/]
+%\newfontfamily\headingfont{RobotoCondensed-Bold}[Path=fonts/]
 
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont[Mapping=tex-text, Color=textcolor, Path = fonts/]{Roboto-Light}
@@ -409,6 +423,3 @@ Position: & \@claimedposition \\
 %----------------------------------------------------------------------------------------
 % Other tweaks %
 %----------------------------------------------------------------------------------------
-
-\RequirePackage[left=5.6cm,top=2cm,right=1cm,bottom=1cm,nohead,nofoot]{geometry}
-%\RequirePackage{hyperref}
