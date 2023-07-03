@@ -1,6 +1,9 @@
 name: Build LaTeX document
 on: [push]
-#working-directory: research_cv
+defaults:
+  run:
+    shell: bash
+    working-directory:  ./research_cv
 
 jobs:
   build_latex:
@@ -11,10 +14,9 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          cache-dependency-path: ./research_cv
-          root_file: ./research_cv/main.tex
+          root_file: main.tex
       - name: Upload PDF file
         uses: actions/upload-artifact@v3
         with:
           name: PDF
-          path: kiran_main.pdf
+          path: main.pdf
