@@ -29,7 +29,7 @@ jobs:
           # setup the username and email. I tend to use 'GitHub Actions Bot' with no email by default
           git config --local user.name "GitHub Actions Bot"
           git config --local user.email "<>"
-          git commit -m "Add main.pdf changes" main.pdf
+          git commit -m "Add main.pdf changes" ./research_cv/main.pdf
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
