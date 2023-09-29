@@ -238,7 +238,7 @@
 
 
 % colors
-\definecolor{color0}{rgb}{0,0,0}% main default color, normally left to black
+\definecolor{color0}{rgb}{10,100,200}% main default color, normally left to black
 \definecolor{color1}{rgb}{0,0,0}% primary theme color
 \definecolor{color2}{rgb}{0,0,0}% secondary theme color
 \definecolor{color3}{rgb}{0,0,0}% tertiary theme color
