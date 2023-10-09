@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (TeX Live 2022)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: journal.aux
+The style file: plainyrrev.bst
+Database file #1: journal.bib
+Warning--empty journal in NEWIP
+Warning--empty journal in 9322506
+Warning--empty journal in 8888088
+Warning--empty journal in QUALCOMM
+Warning--empty journal in westphalpacket
+Warning--empty journal in BPP
+Warning--empty journal in SLICE
+Warning--empty journal in 7919471
+Warning--empty journal in makhijanicloudcasting
+You've used 10 entries,
+            2156 wiz_defined-function locations,
+            553 strings with 6177 characters,
+and the built_in function-call counts, 3335 in all, are:
+= -- 275
+> -- 238
+< -- 0
++ -- 94
+- -- 82
+* -- 204
+:= -- 620
+add.period$ -- 30
+call.type$ -- 10
+change.case$ -- 66
+chr.to.int$ -- 0
+cite$ -- 9
+duplicate$ -- 130
+empty$ -- 230
+format.name$ -- 82
+if$ -- 641
+int.to.chr$ -- 0
+int.to.str$ -- 10
+missing$ -- 10
+newline$ -- 51
+num.names$ -- 30
+pop$ -- 122
+preamble$ -- 0
+purify$ -- 56
+quote$ -- 0
+skip$ -- 78
+stack$ -- 0
+substring$ -- 52
+swap$ -- 11
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 40
+warning$ -- 9
+while$ -- 30
+width$ -- 12
+write$ -- 113
+(There were 9 warnings)
